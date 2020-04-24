@@ -1,0 +1,30 @@
+To  create a SQLITE database or use an existing database and create a table in the database called "Ages"
+
+Sql command:-
+
+CREATE TABLE Ages ( 
+  name VARCHAR(128), 
+  age INTEGER
+)
+
+
+To make sure the table is empty by deleting any rows that are previously inserted
+
+sql command:- 
+
+DELETE FROM Ages;
+
+Inserting new values:-
+
+Sql:-
+
+INSERT INTO Ages (name, age) VALUES ('Elysa', 16);
+INSERT INTO Ages (name, age) VALUES ('Henri', 18);
+INSERT INTO Ages (name, age) VALUES ('Holly', 26);
+INSERT INTO Ages (name, age) VALUES ('Jaye', 31);
+INSERT INTO Ages (name, age) VALUES ('Ayva', 38);
+INSERT INTO Ages (name, age) VALUES ('Lina', 25);
+
+Selecting hex value:-
+
+SELECT hex(name || age) AS X FROM Ages ORDER BY X
